@@ -156,5 +156,31 @@ In ML we have to generate the features but in DL model creates the features itse
     a. POS tagging
     b. Parsing
     c. Corerrerence resolution
-4. Feature Engineering - Text to numbers
+4. Feature Engineering - Text to numbers/Vector
+    a. Bag of Words
+    b. TFIDF
+    c. OHE
+    d. Word2Vec/Doc2Vec - Deep learning
+    - ML pipeline will have different feature engineering compared to DL
+    - ML - We have to have a domain knowledge to create our own features. Its interpratible
+    - DL - We dont have to create the fetures, DL model creates featues for us, hence domain knowledge is not required. But model is not interpretable
+5. Model Building 
+    a. ML Algo
+    b. DL Algo - Transfer Learning like BERT etc
+    c. Cloud API - OPenAI, ChatGPT API, HuggingfaceAPI, Azure API (out of box frame work) etc
+    - Based on amount of data & Nature of problem we select model
+6. Evaluation
+    a. Intrinsic Evaluation - Use metrics to find out accuracy, perplexity
+    b. Extrinsic Evaluation - After deployment (when user started using it. How often user using the feature) how is the performance
+7. Deployment
+    a. API  - Microservice
+    b. Chatbot
+8. Monitoring
+    a. Dashboard with Metrices
+9. Update
+    a. Update with time based on change in data
+    b. Online live update as in new data comes
+    c. etc
+
+
 
