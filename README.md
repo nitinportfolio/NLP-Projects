@@ -182,5 +182,53 @@ In ML we have to generate the features but in DL model creates the features itse
     b. Online live update as in new data comes
     c. etc
 
+# ###########################################################################################
+#                             Text-Representation-BagOfWords-TFIDF-NGrams
 
 
+## Feature Exraction - Text to Numbers in NLP
+- Also called Text Represntation or Text Vectorization
+- Vectorization should be in such a way thay it tells  the hidden meaning - semantic meaning
+
+## Techniques for Vectorization
+1. One Hot Encoding
+2. Bag of Words
+3. ngrams
+4. TFIDF
+5. Custom Features
+
+## Techniques for Vectorization
+1. One Hot Encoding - Not used - Disadvantage - Sparsity & overfitting, No Fixed Size, OOV (out of vocabulary problem), no capturing sematic meaning
+2. Bag of Words - Text classification perform good - Based on Frequency of words - DisAdv - Sparsity, OOV, Ordering of word (meaning changes), Not able to capture small changes like (i am going & I am not going) both are very different meaning.
+3. ngrams - Able to capture semantic better if we take value 2 or 3. DisAdv - Slow, more sparsity, 
+4. TFIDF - Term frequency & Inverse Doc frequency. Get the wt & multiplied together
+5. Custom Features
+6. Word2Vec - Embedding - Deep learning (Best)
+
+# Say that we have dataset of 5000 reviews
+- Corpus - All the text - reviews combined together or dataset joined together
+- Vocabulary - All unique words that  you have in a corpus
+- Document - All the individual reviews are individual documents
+- Word - simple individual words
+
+# Tf-TDF
+Term Frequency(t,d) = freq. of term t in document d **/ total number of terms in document d**
+- TF - acts like a probability
+
+Inverse Document Frequency = **log**(Total no. of documents in the corpus **/ No. of documents with term t in them**)
+- IDF - Gives less wt to the common words
+- We take log so that value of idf is comparable to value of tf. Reducing hte value of idf by taking the log
+- Used in search engine to get the key word retrival
+- Sparsity, OOV, Dimension, No semantic, not capturing the meaning
+
+# Word Embeddings
+- Converting words into real value vector that encodes the meaning of the word such that the words that are closer in the vector speace are expected to be similar in meaning.
+
+# Types 
+1. **Frequency** 
+-    a. Bag of Words
+-    b. tfidf
+-   c. Glove - Global Vector
+-   d. Matrix Factorization
+2. **Prediction usign ML/DL model**
+-    a. Word2Vec - Deep Learing Based
